@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projek akhir</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 id="txt"></h3>
+
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+                <img src="./aset/Rectangle 7.png" alt="" width="100px">
+            </div>
+        </div>
+    </div>
+
+    <div class="nama">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>halo nama saya ahsan</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- kotak1 -->
+    <div class="pendidikan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>pendidikan saya sekarang</h2>
+                    <h2>saya sd di 117 plg</h2>
+                    <h2>saya smp di igs plg</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- kotak 2 -->
+        <div class="container mt-5">
+            <h1 class="text-center">hobi saya</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>1.bermain bola</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 12.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>2. photograpi</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 2.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>3.saya suka main game</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 3.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- kotak 3 -->
+        <div class="container mt-5">
+            <h1 class="text-center">cita cita saya dan prestasi</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>1.cita-cita sya ingin menjadi polisi</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 13.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>2.karate</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 17.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>3.robotick</h5>
+                    <div class="card-body">
+                        <img src="./aset/Rectangle 15.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+</body>
+
+</html>
